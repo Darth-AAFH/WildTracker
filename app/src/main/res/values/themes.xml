@@ -2,15 +2,15 @@
     <!-- Base application theme. -->
     <style name="Theme.WildTracker" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#FF9800</item>
-        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="colorPrimary">#03A9F4</item>
+        <item name="colorPrimaryVariant">@color/gray</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/blue_trans</item>
         <item name="colorSecondaryVariant">@color/blue_trans</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorOnSecondary">@color/gray</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">@color/orange</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/blue</item>
         <!-- Customize your theme here. -->
 
 

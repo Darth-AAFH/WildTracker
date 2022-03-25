@@ -6,6 +6,9 @@ import android.view.View
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.example.wildtracker.LoginActivity.Companion.useremail
+import com.google.android.gms.auth.api.signin.GoogleSignIn
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions
+import com.google.firebase.ktx.Firebase
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,13 +19,27 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    fun callSignOut(view: View){
+    fun callSignOut(view: View) {
         signOut()
     }
-    private fun signOut(){
+
+    private fun signOut() {
+
         useremail = ""
         FirebaseAuth.getInstance().signOut()
+
+        val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+            .requestIdToken(this.getString(R.string.default_web_client_id))
+            .requestEmail()
+            .build()
+
+        val googleSignInClient = GoogleSignIn.getClient(this, gso)
+        googleSignInClient.signOut()
+
+
         //Cierra sesion y manda devuelta al login
-        startActivity (Intent(this, LoginActivity::class.java))
+
+
+        startActivity(Intent(this, LoginActivity::class.java))
     }
 }

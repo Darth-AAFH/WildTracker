@@ -7,10 +7,12 @@
     android:background="@color/gray_dark">
 
     <ImageView
+        android:paddingTop="20dp"
         android:id="@+id/imageView"
         android:layout_width="match_parent"
+        android:backgroundTint="@color/white"
         android:layout_height="207dp"
-        app:srcCompat="@mipmap/banner"/>
+        app:srcCompat="@mipmap/fitness" />
 
     <TextView
         android:id="@+id/txtInvitation"
@@ -89,19 +91,11 @@
 
     </LinearLayout>
 
-    <Button
+    <com.google.android.gms.common.SignInButton
         android:id="@+id/btSignGoogle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:backgroundTint="@color/white"
-        android:drawableLeft="@drawable/google"
-        android:text="@string/google"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="25sp"
-        android:paddingLeft="60dp"/>
+        android:layout_centerInParent="true" />
 
 
 </LinearLayout>

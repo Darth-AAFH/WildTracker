@@ -30,6 +30,9 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures{
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -46,4 +49,10 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth-ktx:21.0.2'
     implementation "com.google.firebase:firebase-analytics"
     implementation "com.google.firebase:firebase-firestore:24.0.2"
+
+    implementation 'com.google.android.gms:play-services-location:19.0.1'
+    implementation 'com.google.android.gms:play-services-maps:18.0.2'
+    implementation 'com.google.android.gms:play-services-auth:20.1.0'
+
+
 }
