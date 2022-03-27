@@ -104,7 +104,7 @@ class LoginActivity : AppCompatActivity() {
         val firebaseUser = firebaseAuth.currentUser
         if (firebaseUser != null) {
             //user is LoggedIn
-            startActivity(Intent(this@LoginActivity, MainActivity::class.java))
+            startActivity(Intent(this@LoginActivity, NavigationActivity::class.java))
             finish()
         }
     }
@@ -162,7 +162,7 @@ class LoginActivity : AppCompatActivity() {
                 }
                 register(true)
                 //Start profile activity
-                startActivity(Intent(this@LoginActivity, MainActivity::class.java))
+                startActivity(Intent(this@LoginActivity, NavigationActivity::class.java))
                 finish()
             }
             .addOnFailureListener { e ->
@@ -258,7 +258,7 @@ class LoginActivity : AppCompatActivity() {
         useremail = email
         providerSession = provider
 
-        val intent = Intent(this, MainActivity::class.java)
+        val intent = Intent(this, NavigationActivity::class.java)
         startActivity(intent)
     }
 
