@@ -22,4 +22,11 @@
         android:name="com.example.wildtracker.ui.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_maps"
+        android:name="com.example.wildtracker.ui.MapsFragment"
+        android:label="@string/title_activity_maps"
+        tools:layout="@layout/fragment_maps" />
+
 </navigation>
