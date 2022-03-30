@@ -1,14 +1,13 @@
 package com.example.wildtracker
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
-import com.google.firebase.auth.FirebaseAuth
+import androidx.appcompat.app.AppCompatActivity
 import com.example.wildtracker.LoginActivity.Companion.useremail
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
-import com.google.firebase.ktx.Firebase
+import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -42,4 +41,6 @@ class MainActivity : AppCompatActivity() {
 
         startActivity(Intent(this, LoginActivity::class.java))
     }
+
+
 }

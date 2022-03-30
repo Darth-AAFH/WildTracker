@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
@@ -20,6 +21,11 @@
             android:id="@+id/nav_maps"
             android:icon="@drawable/maps_icon"
             android:title="@string/menu_maps" />
+        <item
+            android:id="@+id/logOut"
+            android:icon="@drawable/logout"
+            android:title="@string/logout"
+            android:actionLayout="@layout/activity_login" />
 
 
     </group>
