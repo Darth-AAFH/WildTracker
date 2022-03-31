@@ -60,12 +60,12 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     }
 
     private fun createMarker() {
-        val favoritePlace = LatLng(28.044195, -16.5363842)
+        val favoritePlace = LatLng(20.702609, -103.389246)
         val home = LatLng(20.669607, -103.388950)
-        map.addMarker(MarkerOptions().position(favoritePlace).title("Mi playa favorita!"))
+        map.addMarker(MarkerOptions().position(favoritePlace).title("Here we are"))
         map.animateCamera(
             CameraUpdateFactory.newLatLngZoom(favoritePlace, 18f),
-            4000,
+            1000,
             null
         )
 
