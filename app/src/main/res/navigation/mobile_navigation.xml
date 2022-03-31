@@ -24,6 +24,7 @@
         tools:layout="@layout/fragment_ejercicio" />
 
 
+
     <fragment
         android:id="@+id/nav_seguimiento"
         android:name="com.example.wildtracker.ui.SeguimientoFragment"
@@ -46,11 +47,11 @@
         android:name="com.example.wildtracker.ui.ChatFragment"
         android:label="@string/menu_chat"
         tools:layout="@layout/fragment_chat" />
-    <fragment
+    <activity
         android:id="@+id/nav_maps"
-        android:name="com.example.wildtracker.ui.MapsFragment"
+        android:name="com.example.wildtracker.ui.MapsActivity"
         android:label="@string/title_activity_maps"
-        tools:layout="@layout/fragment_maps" />
+        tools:layout="@layout/activity_maps" />
 
 
 </navigation>
