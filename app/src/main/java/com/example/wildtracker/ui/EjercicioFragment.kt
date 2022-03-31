@@ -6,11 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
-import com.example.wildtracker.R
-import com.example.wildtracker.databinding.FragmentGalleryBinding
 
-class GalleryFragment : Fragment() {
+import com.example.wildtracker.R
+
+class EjercicioFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -18,9 +17,9 @@ class GalleryFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
 
-        val root = inflater.inflate(R.layout.fragment_gallery, container, false)
+        val root = inflater.inflate(R.layout.fragment_ejercicio, container, false)
+
         return root
     }
-
 
 }

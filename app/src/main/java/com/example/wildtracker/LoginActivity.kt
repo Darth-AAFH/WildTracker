@@ -130,7 +130,7 @@ class LoginActivity : AppCompatActivity() {
         //Configure google sign in
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestIdToken(getString(R.string.default_web_client_id))
-            //No pasa nada si esta en rojo
+            //No pasa nada si esta en rojo, es el id del usuario
             .requestEmail() //Solo necesitamos el correo de la cuenta
             .build()
         var googleSignInClient = GoogleSignIn.getClient(this, gso)

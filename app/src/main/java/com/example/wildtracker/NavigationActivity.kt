@@ -1,9 +1,10 @@
 package com.example.wildtracker
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
+import android.view.*
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
@@ -20,10 +21,13 @@ import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 import kotlin.jvm.*
 
+
 class NavigationActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityNavigationBinding
+    //Cambiar correo en el menu
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -43,16 +47,27 @@ class NavigationActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_home,
-                R.id.nav_gallery,
-                R.id.nav_slideshow,
+                R.id.nav_inicio,
+                R.id.nav_plantillas,
+                R.id.nav_ejercicio,
                 R.id.nav_maps,
+                R.id.nav_seguimiento,
+                R.id.nav_perfil,
+                R.id.nav_ranking,
+                R.id.nav_chat,
                 R.id.action_settings
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+        var currentUser = FirebaseAuth.getInstance().currentUser
+
     }
+
+    /* fun onviewcreated(view: view, savedinstancestate: bundle?) {
+         super.oncreateview(layoutinflater inflater, viewgroup container, bundle savedinstancestate)
+         val fragmentcontext: context = view.getcontext()
+     }*/
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.

@@ -35,6 +35,13 @@
     <string name="title_activity_maps">MapsActivity</string>
     <string name="menu_maps">Mapas</string>
     <string name="logout">Cerrar sesión</string>
+    <string name="menu_inicio">Inicio</string>
+    <string name="menu_plantillas">Plantillas</string>
+    <string name="menu_ejercicio">Ejercicio</string>
+    <string name="menu_seguimiento">Seguimiento</string>
+    <string name="menu_perfil">Perfil</string>
+    <string name="menu_ranking">Ranking</string>
+    <string name="menu_chat">Chat</string>
 
 
 </resources>
