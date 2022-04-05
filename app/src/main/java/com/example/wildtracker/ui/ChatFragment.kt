@@ -15,7 +15,6 @@ class ChatFragment : Fragment() {
     ): View {
 
         val root = inflater.inflate(R.layout.fragment_chat, container, false)
-
         return root
     }
 }
