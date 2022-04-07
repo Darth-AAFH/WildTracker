@@ -42,6 +42,11 @@
     <string name="menu_perfil">Perfil</string>
     <string name="menu_ranking">Ranking</string>
     <string name="menu_chat">Chat</string>
+    <string name="bar_title">WildTracker</string>
+    <string name="user">user@user-com</string>
+    <string name="nav_hi">Moviendo el cuerpo mejoramos condición</string>
+    <string name="level">Nivel</string>
+    <string name="bar_title_record">Metas</string>
 
 
 </resources>

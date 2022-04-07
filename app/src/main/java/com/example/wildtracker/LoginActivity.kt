@@ -143,7 +143,7 @@ class LoginActivity : AppCompatActivity() {
         val firebaseUser = firebaseAuth.currentUser
         if (firebaseUser != null) {
             //user is LoggedIn
-            startActivity(Intent(this@LoginActivity, NavigationActivity::class.java))
+            startActivity(Intent(this@LoginActivity, MainActivity::class.java))
             finish()
         }
     }
@@ -227,7 +227,7 @@ class LoginActivity : AppCompatActivity() {
         useremail = email
         providerSession = provider
 
-        val intent = Intent(this, NavigationActivity::class.java)
+        val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
     }
 

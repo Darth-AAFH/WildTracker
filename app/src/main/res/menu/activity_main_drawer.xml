@@ -42,7 +42,16 @@
             android:id="@+id/nav_chat"
             android:icon="@drawable/chat_icon"
             android:title="@string/menu_chat" />
-
-
     </group>
+
+    <item android:title="Cuenta">
+    <menu>
+        <item
+            android:id="@+id/logOut"
+            android:icon="@drawable/logout"
+            android:title="@string/logout" />
+    </menu>
+    </item>
+
+
 </menu>

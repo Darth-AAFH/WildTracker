@@ -15,6 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WildTracker">
         <activity
+            android:name=".RecordActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.My_Maps"
             android:exported="false" />
         <activity
